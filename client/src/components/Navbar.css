@@ -1,7 +1,12 @@
 .header {
     flex: 0 1 auto;
-    
-    
+    background-color:#0f0e22;
+  }
+
+  .sticky-section{
+    position: fixed;
+    width:100%;
+    top: 0;
   }
 
   .logo {
@@ -28,15 +33,15 @@
 
 @media only screen and (max-width: 600px) {
     .main-nav {
-        font-size: 0.8em;
-        
+        font-size: 0.8em; 
     }
+    
     .logo {
-      display: none;
-      
+      width: 2rem;
     }
+   
     li {
-      padding: 1px
+      padding: 1px;
     }
 }
 
@@ -46,6 +51,8 @@ li {
 
 .nav-element {
     transition: transform 2sec;
+    
+    
   }
 
   .nav-element:hover {
@@ -55,4 +62,5 @@ li {
   a {
     text-decoration: none;
     color: #f2f2f2;
+    
 }

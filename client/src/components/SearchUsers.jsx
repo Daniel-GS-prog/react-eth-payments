@@ -1,9 +1,13 @@
 import React from "react";
 
+import '../App.css';
+import './SearchUsers.css';
+
 const SearchUsers = () => {
     return(
-        <div>
-            <h1>Search Users</h1>
+        <div  id='users' className="searchUsers">
+            <h1 >Users</h1>
+            
         </div>
     );
 }

@@ -20,15 +20,16 @@ html, body {
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 
 .box {
   display: flex;
   flex-flow: column;
+  
  
-  overflow-y: scroll;
+ 
 }
 
 .box > * {

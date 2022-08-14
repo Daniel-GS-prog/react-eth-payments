@@ -6,8 +6,8 @@ import Landing from './components/Landing.jsx';
 import Footer from './components/Footer.jsx';
 import Transactions from './components/Transactions.jsx';
 import Contacts from './components/Contacts.jsx';
-
 import SearchUsers from './components/SearchUsers.jsx';
+import About from './components/About.jsx';
 
 
 const App = () => {
@@ -16,10 +16,15 @@ const App = () => {
   return (
     
 
-    <div  className='box'>
+    <div id='home' className='box'>
       <Navbar />
       <Landing />
-      <Footer />
+      <Transactions />
+      <Contacts />
+      <SearchUsers />
+      <About />
+      
+      
       
     </div>
 

@@ -5,8 +5,8 @@ import './Transactions.css';
 
 const Transactions = () => {
     return(
-        <div className="row footer">
-            <h1>Transactions</h1>
+        <div id="transactions" className="transactions1">
+            <h1 >Transactions</h1>
         </div>
     );
 }
