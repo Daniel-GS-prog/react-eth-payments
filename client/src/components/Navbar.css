@@ -1,0 +1,58 @@
+.header {
+    flex: 0 1 auto;
+    
+    
+  }
+
+  .logo {
+	width: 10rem;
+}
+
+.github {
+	width: 1.2rem;
+	transition: transform 1s;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo-position{
+	margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.8em;
+        
+    }
+    .logo {
+      display: none;
+      
+    }
+    li {
+      padding: 1px
+    }
+}
+
+li {
+    padding: 20px;
+}
+
+.nav-element {
+    transition: transform 2sec;
+  }
+
+  .nav-element:hover {
+	transform: scale(1.1);
+}
+
+  a {
+    text-decoration: none;
+    color: #f2f2f2;
+}

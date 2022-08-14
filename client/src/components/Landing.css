@@ -1,0 +1,78 @@
+.content {
+  height: 90vh;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.central-text {
+	text-align: center;
+  font-weight: 600;
+  margin-bottom: 100px;
+  
+}
+
+.p-landing-page {
+	font-size: clamp(1.1rem, -0.875rem + 4vw, 2rem);
+  text-transform: uppercase;
+}
+
+.p-landing-page-2 {
+	font-size: clamp(.8em, .3em, .1em);
+  word-spacing: 1rem;
+  text-transform: capitalize;
+}
+
+.button-18 {
+  align-items: center;
+  background-color: #16437E;
+  border: 0;
+  margin-top: 1rem;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #f2f2f2;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.2rem;
+  font-family: 'Playfair Display';
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  width: 25rem;
+  height: 3rem;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus { 
+  background-color: #3366cc;
+  color: #f2f2f2;
+}
+
+.button-18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+@media only screen and (max-width: 600px){
+  .button-18 {
+    width: auto;
+  }
+}

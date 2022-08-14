@@ -1,0 +1,41 @@
+#root {
+    height: 100%;
+  }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: Arial;
+	font-family: 'Playfair Display';
+	background: rgb(15,14,34);
+	background: linear-gradient(90deg, rgba(15,14,34,1) 0%, rgba(3,0,0,0.9962359943977591) 11%, rgba(26,61,107,1) 100%);
+	color: #f2f2f2;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.box {
+  display: flex;
+  flex-flow: column;
+ 
+  overflow-y: scroll;
+}
+
+.box > * {
+  border: 2px solid white;
+  margin: 2px;
+}
+
+.row {
+	margin: 1px;
+}
