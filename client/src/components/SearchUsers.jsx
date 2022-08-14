@@ -1,4 +1,6 @@
 import React from "react";
+import SearchBox from './SearchBox.jsx';
+
 
 import '../App.css';
 import './SearchUsers.css';
@@ -6,8 +8,9 @@ import './SearchUsers.css';
 const SearchUsers = () => {
     return(
         <div  id='users' className="searchUsers">
-            <h1 >Users</h1>
-            
+        <h1> Get in contact with other users</h1>
+        
+          
         </div>
     );
 }

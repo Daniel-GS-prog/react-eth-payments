@@ -1,0 +1,9 @@
+.SearchBox {
+    padding: 2px;
+}
+
+input {
+    padding: 5px;
+    width:clamp(250px,50vw,310px);
+    
+}

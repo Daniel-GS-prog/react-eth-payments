@@ -21,7 +21,7 @@
 .main-nav {
     display: flex;
     list-style: none;
-    margin: 0;
+    margin: 0px;
     font-size: 1rem;
     justify-content: flex-end;
     align-items: center;
@@ -30,19 +30,21 @@
 .logo-position{
 	margin-right: auto;
 }
-
 @media only screen and (max-width: 600px) {
     .main-nav {
         font-size: 0.8em; 
+        margin: 0px;  
+          
+    }
+
+    .main-nav > li {
+      padding: 5px;
     }
     
     .logo {
-      width: 2rem;
+      width: 5rem;
     }
-   
-    li {
-      padding: 1px;
-    }
+
 }
 
 li {
