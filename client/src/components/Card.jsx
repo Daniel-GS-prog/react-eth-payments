@@ -13,12 +13,14 @@ const Card = ({name, email, id}) => {
 
 	return (
 
-		<div className='dib bg-light-green br3 pa3 ma2 grow bw2 shadow-5 tc '>
-			<img src={`https://robohash.org/${id}?size=200x200`} alt='robots' />
+		<div className='w5 h5 dib bg-lightest-blue black br3 pa3 ma2 grow bw2 shadow-5 tc '>
+			<img src={`https://robohash.org/${id}?size=50x50`} alt='User' />
 			<div>
 				<h2>{name}</h2>
 
 				<p>{email}</p>
+
+				<p>Eth address</p>
 			</div>
 		</div>
 		);

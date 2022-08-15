@@ -1,7 +1,115 @@
-.transactions1 {
-    height: 99vh;
-    display: flex;
-    justify-content: center;
-	align-items: center;
-	
+.central-text {
+	text-align: center;
+}
+
+.sendfunds-page {
+	font-size: clamp(1.4rem, -0.875rem + 4vw, 3rem);
+  
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sendfunds-page-2 {
+	font-size: clamp(.8em, .3em, .1em);
+  word-spacing: 1rem;
+  text-transform: capitalize;
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  text-transform: capitalize;
+  font-size: .9em;
+  /*border: 2px solid red;*/
+  border-radius: 1rem;
+  padding: 1rem;
+  height: 30%;
+  margin: 5rem 1rem;
+}
+
+.sendfunds-text{
+  font-size: 2rem;
+  margin: 0px;
+}
+
+form {
+  width: 25rem;
+  max-width: 30rem;
+  min-width: 20rem;
+
+  background-color: #092f5d;
+  padding: 2rem;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+}
+
+form > * {
+  border-radius: .3rem;
+  padding: 1rem;
+  margin: .5rem 0rem;
+  border: 0px;
+
+}
+
+input {
+  height: 2.5em;
+  background-color: #0d468c;
+  width: 100%;
+  color: #8c8c8c;
+}
+
+
+
+
+.button-18 {
+  align-items: center;
+  background-color: #16437E;
+  border: 0;
+  margin-top: 2rem;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #f2f2f2;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.2rem;
+  font-family: 'Playfair Display';
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  width: 100%;
+  height: 3rem;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus { 
+  background-color: #3366cc;
+  color: #f2f2f2;
+}
+
+.button-18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
 }

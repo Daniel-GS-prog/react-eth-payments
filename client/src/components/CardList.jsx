@@ -8,7 +8,7 @@ import Card from './Card';
 // robots here is a prop, even though it's a state in the app element
 // and that's because the parent element passes its state as prop to
 // thei children
-const CardList = ({robots}) => {
+const CardList = ({users}) => {
 
 	// we can iterate through the robots array and create 
 	// a card component  with each user/robot
@@ -19,16 +19,16 @@ const CardList = ({robots}) => {
 	//class Andrei recommened to use the robot id, and that' why I changed it accordingly.
 
 	return (
-		<div>
+		<div className=''>
 
 		{
-			robots.map((user , i) => {
+			users.map((user , i) => {
 			return (
 				<Card 
-					key={robots[i].id} 
-					id={robots[i].id} 
-					name={robots[i].name} 
-					email={robots[i].email}
+					key={users[i].id} 
+					id={users[i].id} 
+					name={users[i].name} 
+					email={users[i].email}
 				/>
 				);
 			})

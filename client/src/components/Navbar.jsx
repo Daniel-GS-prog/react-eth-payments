@@ -13,7 +13,6 @@ const Navbar = () => {
             <ul class="main-nav">
 				<li class="logo-position"> <a href="#home"><img class="logo" src={salusLogo} /></a></li>
 				<li class="nav-element"><a href="#transactions">Transactions</a></li>
-				<li class="nav-element"><a  href="#contacts">Contact List</a></li>
 				<li class="nav-element"><a href="#users">Users</a></li>
 				<li class="nav-element"><a href="#about">About</a></li>
 
