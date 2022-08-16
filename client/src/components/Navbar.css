@@ -1,14 +1,15 @@
 .header {
     flex: 0 1 auto;
     background-color:#0f0e22;
-    overflow-y: auto;
+   
   }
 
   .sticky-section{
-    position: fixed;
+   position:fixed;
     width:100%;
     top: 0;
-    overflow-y: hidden;
+    overflow: hidden;
+   
   }
 
   .logo {

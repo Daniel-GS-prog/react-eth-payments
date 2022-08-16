@@ -1,7 +1,47 @@
 .Card {
     display: inline-block;
-    background-color: white;
-    border: 5px;
+
+    background-color: rgb(243, 245, 240);
+    width: 200px;
+    height: 200px;
+    padding:0px;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+.Card h2 {
+    font-size: 1.1rem;
     margin: 5px;
+}
+
+.Card p {
+    
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.Card > img {
+    border: 4px solid rgb(79, 79, 234);
+    
+    margin-top: 12px;
+    padding: 5px;
+    border-radius: 50px;
+    width: 80px;
+    background-color: rgb(102, 104, 226);
+}
+
+
+.input{
+    display: flex;
+}
+
+.input > *{
+    margin:auto;
+    padding:0px 4px;
     
 }
+.icon{
+    max-width: 15px;
+    background:transparent;
+}
+

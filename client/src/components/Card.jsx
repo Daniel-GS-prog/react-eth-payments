@@ -1,29 +1,52 @@
 import React from 'react';
 import './Card.css';
-// keep in mind the tags are not html but jsx
-// so we need to import React.
+
+const address = '0xE7db30F0831Bae94e37209ddBD3d74fFAacBD1bc';
+
+function copy() {
+	/* Get the text field */
+	var copyText = document.getElementById("myInput");
+  
+	// /* Select the text field */
+	copyText.select();
+	copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  
+	 /* Copy the text inside the text field */
+	navigator.clipboard.writeText(copyText.value);
+  
+	/* Alert the copied text */
+	alert("Copied the text: " + copyText.value);
+  } 
 
 const Card = ({name, email, id}) => {
 
-	// const { name, email, id} = props;
-//we can pass the parameters inside the props 
-// in the card function declaration or as show above
-// props name, email and id, are defined in the index.js file
-// for the card tag.
 
 	return (
 
-		<div className='w5 h5 dib bg-lightest-blue black br3 pa3 ma2 grow bw2 shadow-5 tc '>
-			<img src={`https://robohash.org/${id}?size=50x50`} alt='User' />
+		<div className=' Card black '>
+			<img src={`https://robohash.org/${id}`} alt='User' />
 			<div>
 				<h2>{name}</h2>
 
 				<p>{email}</p>
 
-				<p>Eth address</p>
+				
+					<p>Eth address:</p>
+					<p>{address.substring(0,8)}...</p>
+				
+
+				
+				
 			</div>
 		</div>
 		);
 }
 
 export default Card;
+
+
+{/* <img 
+						className='icon'	
+						src="http://clipground.com/images/copy-4.png" 
+          				title="Click to Copy"
+					/> */}

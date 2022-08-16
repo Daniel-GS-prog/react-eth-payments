@@ -1,9 +1,16 @@
 .SearchBox {
     padding: 2px;
+    padding: 5px;
 }
 
 input {
-    padding: 5px;
+    padding: 5px 10px;
+    margin: 5px;
     width:clamp(250px,50vw,310px);
+    background-color: #a8bddd;
+    border-color: #538adb;
+    border-radius: 5px;
+    color:black;
+    font-weight: 600;
     
 }

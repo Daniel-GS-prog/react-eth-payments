@@ -1,6 +1,30 @@
 .About{
-    height: 70vh;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 	align-items: center;
+}
+
+.main {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px 0px;
+    font-size: 1.5rem;
+}
+
+.secondary{
+    padding: 20px 50px 60px 50px;
+    background-color:rgb(243, 245, 240);
+    color:rgb(67, 62, 62);
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+.secondary > h1{
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 0px;
+    
+    
 }

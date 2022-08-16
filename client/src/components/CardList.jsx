@@ -1,6 +1,9 @@
 import React from 'react';
 import Card from './Card';
 
+import '../App.css';
+import './CardList.css';
+
 // we could also import the robots element from './robots'
 // in that case we wouldn't have to pass it as a prop
 
@@ -19,7 +22,7 @@ const CardList = ({users}) => {
 	//class Andrei recommened to use the robot id, and that' why I changed it accordingly.
 
 	return (
-		<div className=''>
+		<div className='position'>
 
 		{
 			users.map((user , i) => {

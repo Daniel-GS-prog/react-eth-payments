@@ -2,7 +2,7 @@ import React from "react";
 
 import './Landing.css';
 import '../App.css';
-import App from '../App.jsx';
+
 
 const Landing = () => {
     return(

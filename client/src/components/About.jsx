@@ -6,13 +6,13 @@ import './About.css';
 const About = () => {
     return (
         
-        <div id='about' className=''>
+        <div id='about'>
 
-        <p className='ttu f3 tc pa4 '>Who we are</p>
+        <p className='main'>Who we are</p>
 
-        <div className="tl ph5 f4 bg-near-white black ">
+        <div className="secondary">
 			
-				<h1 className='f3'>Our vision</h1>
+				<h1>Our vision</h1>
 				
 			
 				<p >We believe in blockchain mass adoption.</p>
