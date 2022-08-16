@@ -16,20 +16,20 @@ html, body {
 	background: rgb(15,14,34);
 	background: linear-gradient(90deg, rgba(15,14,34,1) 0%, rgba(3,0,0,0.9962359943977591) 11%, rgba(26,61,107,1) 100%);
 	color: #f2f2f2;
+
 }
 
 .box {
   display: flex;
   flex-flow: column;
   
- 
- 
+
 }
 
-.box > * {
+/* .box > * {
   border: 2px solid white;
   margin: 2px;
-}
+} */
 
 .row {
 	margin: 1px;

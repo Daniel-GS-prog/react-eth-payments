@@ -4,15 +4,15 @@
    
   }
 
-  .sticky-section{
-   position:fixed;
-    width:100%;
-    top: 0;
-    overflow: hidden;
+.sticky-section{
+  position:fixed;
+  width:100%;
+  top: 0;
+  overflow: hidden;
    
   }
 
-  .logo {
+.logo {
 	width: 10rem;
 }
 
@@ -56,8 +56,7 @@ li {
 
 .nav-element {
     transition: transform 2sec;
-    
-    
+ 
   }
 
   .nav-element:hover {

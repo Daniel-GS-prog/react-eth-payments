@@ -51,13 +51,13 @@ class App extends Component {
         <div id='home' className='box'>
           <Navbar />
           <Landing />
-          <div id="transactions" className='h4'></div>
+          <div id="transactions" className='ma3'></div>
           <Transactions />
 
           {/* for spacing */}
-          <div id="users" className='h3'></div> 
+          <div id="users" className='ma5'></div> 
           
-          <h1   className=' mv40 tc'>Get in touch with other users</h1>
+          <h1   className='ma5mv40 tc'>Get in touch with other users</h1>
 
           {/* div to present the users array */}
           <div  className='static tc ma10 flex flex-column items-center justify-center pt10'>

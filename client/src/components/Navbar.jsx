@@ -15,9 +15,7 @@ const Navbar = () => {
 				<li class="nav-element"><a href="#transactions">Transactions</a></li>
 				<li class="nav-element"><a href="#users">Users</a></li>
 				<li class="nav-element"><a href="#about">About</a></li>
-
-				
-				<li class="nav-element"><img class="github" src={githubLogo} /></li>
+				<li class="nav-element"><a href="https://github.com/Daniel-GS-prog/react-eth-payments" target="_blank"><img class="github" src={githubLogo}/></a></li>
 			</ul>
         </div>
     );
