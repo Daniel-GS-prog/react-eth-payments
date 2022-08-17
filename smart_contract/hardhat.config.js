@@ -1,6 +1,7 @@
 // https://eth-goerli.g.alchemy.com/v2/0Dtlm-tJXlnHTbGhajUO5vuPal92tzGy
 
-require('@nomiclabs/hardhat-waffle')
+require('@nomiclabs/hardhat-waffle');
+
 
 module.exports = {
   solidity: '0.8.0',
