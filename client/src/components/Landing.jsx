@@ -5,6 +5,11 @@ import '../App.css';
 
 
 const Landing = () => {
+
+    const connectWallet = () => {
+
+	};
+    
     return(
         
         <div className="content">
@@ -12,7 +17,7 @@ const Landing = () => {
             <div class="central-text p-landing-page">
 				<p >A web3 social media platform<br /></p>
 				<p class="p-landing-page-2" >Conect  transfer create</p>
-				<p><button class="button-18" role="button">Connect your wallet</button></p>
+				<p><button class="button-18" onclick={connectWallet} role="button">Connect your wallet</button></p>
 			</div>
         </div>
     );

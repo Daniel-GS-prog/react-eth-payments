@@ -19,6 +19,15 @@
 .github {
 	width: 1.2rem;
 	transition: transform 1s;
+  
+}
+
+.on-off{
+ 
+  background-color: red;
+  border-radius: 10px;
+  margin-top: 2.5px;
+  
 }
 
 .main-nav {
@@ -28,6 +37,7 @@
     font-size: 1rem;
     justify-content: flex-end;
     align-items: center;
+   
 }
 
 .logo-position{
@@ -68,3 +78,4 @@ li {
     color: #f2f2f2;
     
 }
+
