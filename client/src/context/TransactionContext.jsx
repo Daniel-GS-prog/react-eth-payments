@@ -25,7 +25,7 @@ export const TransactionProvider = ({children}) => {
 
         //states:
         // passing the current account to the components.
-        const [currentAccount, setCurrentAccount] = useState([]);
+        const [currentAccount, setCurrentAccount] = useState('');
 
         //getting the data from the transactions.jsx.
         const [formData, setFormData] = useState({addressTo: '', amount: ''});
@@ -98,12 +98,12 @@ export const TransactionProvider = ({children}) => {
             // calling our contract
             const transactionHash = await transactionContract.addToBlockchain(addressTo, parsedAmount);
            
-            // loading the transaction hash and the state of the transaction to the console.
+            // loading the transaction hash and the state of the transaction to the user.
            setIsLoading (true);
-           console.log(`Loading - ${transactionHash.hash}`);
+           alert(`Loading - Hash: ${transactionHash.hash}`);
            await transactionHash.wait();
            setIsLoading(false);
-           console.log(`Success - ${transactionHash.hash}`);
+           alert(`Success - Hash: ${transactionHash.hash}`);
             
         } catch (error) {
             console.log(error);
@@ -118,7 +118,7 @@ export const TransactionProvider = ({children}) => {
 
 
     return (
-        <TransactionContext.Provider value={{connectWallet, currentAccount, formData, setFormData, handleChange, sendTransaction, isLoading}}>
+        <TransactionContext.Provider value={{connectWallet, currentAccount, setCurrentAccount, formData, setFormData, handleChange, sendTransaction, isLoading}}>
             {children}
         </TransactionContext.Provider>
     )

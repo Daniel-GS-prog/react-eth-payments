@@ -11,9 +11,7 @@ const Landing = () => {
         // providing access to the ethereum variables from TransactionContext.jsx
         const {connectWallet, currentAccount, formData, setFormData, handleChange} = useContext(TransactionContext);
        
-        const connectedButton = () => {
-            document.querySelector('.on-off').style.color='green';
-        }
+        
         
     
     
@@ -26,7 +24,7 @@ const Landing = () => {
 				<p className="p-landing-page-2" >Conect  transfer create</p>
 				
                 {/*if the account is connected the connect button won't be rendered */}
-                {currentAccount && (
+                {!currentAccount && (
                     <p>
                         <button 
                             className="button-18" 
@@ -35,9 +33,6 @@ const Landing = () => {
                             
                         </button>
                     </p>
-                    
-                    
-
                 )}
 			</div>
         </div>
