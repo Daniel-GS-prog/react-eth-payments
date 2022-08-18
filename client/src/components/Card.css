@@ -45,3 +45,12 @@
     background:transparent;
 }
 
+.display-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}.display-flex > * {
+    margin: 0px;
+}
+
