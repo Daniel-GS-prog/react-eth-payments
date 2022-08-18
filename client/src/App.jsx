@@ -51,6 +51,8 @@ class App extends Component {
         <div id='home' className='box'>
           <Navbar />
           <Landing />
+
+          {/* for spacing */}
           <div id="transactions" className='ma3'></div>
           <Transactions />
 
