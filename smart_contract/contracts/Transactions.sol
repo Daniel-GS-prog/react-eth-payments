@@ -1,5 +1,8 @@
 // SPDX-license-Idnetifier: UNLICENSED
 
+// taken from:
+// https://github.com/adrianhajdin/project_web3.0/tree/main/smart_contract/contracts
+
 pragma solidity ^0.8.0;
 
 

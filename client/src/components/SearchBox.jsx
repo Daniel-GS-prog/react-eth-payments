@@ -5,11 +5,11 @@ const SearchBox  = ({SearchChange}) => {
 	return (
 
 		<div className="SearchBox">
-		<input 
-		type="search" 
-		placeholder="Search users" 
-		onChange= {SearchChange}
-		/>
+			<input 
+			type="search" 
+			placeholder="Search users" 
+			onChange= {SearchChange}
+			/>
 		
 		</div>
 		);

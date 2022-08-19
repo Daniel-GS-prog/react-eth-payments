@@ -1,3 +1,7 @@
+// taken from:
+// https://github.com/adrianhajdin/project_web3.0/tree/main/smart_contract/contracts
+
+
 import React, {useEffect, useState} from 'react';
 // const ethers = require('ethers');
 // import {ethers} from 'ethers';
