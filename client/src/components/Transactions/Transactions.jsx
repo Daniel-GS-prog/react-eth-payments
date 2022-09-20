@@ -1,9 +1,9 @@
 import React,{useContext}  from "react";
 
-import Loader from './Loader.jsx';
-import '../App.css';
+import Loader from '../Loader/Loader.jsx';
+import '../../App.css';
 import './Transactions.css';
-import { TransactionContext} from '../context/TransactionContext';
+import { TransactionContext} from '../../context/TransactionContext';
 
 
 const Input = ({placeholder, name, type, value, handleChange }) => (

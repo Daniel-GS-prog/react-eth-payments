@@ -1,16 +1,8 @@
 .header {
-    flex: 0 1 auto;
-    background-color:#0f0e22;
-   
+      min-height: 5vh;
   }
 
-.sticky-section{
-  position:fixed;
-  width:100%;
-  top: 0;
-  overflow: hidden;
-   
-  }
+  
 
 .logo {
 	width: 10rem;
@@ -23,10 +15,24 @@
 }
 
 .on-off{
- 
   background-color: red;
   border-radius: 10px;
   margin-top: 2.5px;
+  margin-right: 2px;
+  
+}
+
+ul {
+    padding: 0;
+  }
+
+li {
+  padding: 5px;
+}  
+
+a {
+  text-decoration: none;
+  color: #f2f2f2;
   
 }
 
@@ -43,6 +49,18 @@
 .logo-position{
 	margin-right: auto;
 }
+
+
+.nav-element {
+  transition: transform 2sec;
+
+}
+
+.nav-element:hover {
+transform: scale(1.1);
+}
+
+
 @media only screen and (max-width: 600px) {
     .main-nav {
         font-size: 0.8em; 
@@ -60,22 +78,13 @@
 
 }
 
-li {
-    padding: 20px;
-}
-
-.nav-element {
-    transition: transform 2sec;
- 
-  }
-
-  .nav-element:hover {
-	transform: scale(1.1);
-}
-
-  a {
-    text-decoration: none;
-    color: #f2f2f2;
+@media only screen and (min-width: 900px){
+  li {
+    padding-inline: 10px;
     
+  }
+  .on-off{
+    margin-right: 10px;
+  }
 }
 

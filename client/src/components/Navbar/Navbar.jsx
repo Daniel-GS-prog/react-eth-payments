@@ -1,14 +1,14 @@
 
 import React,{useContext}  from "react";
-import salusLogo from '../images/salus.png';
-import githubLogo from '../images/github.png';
-import onoffbutton from '../images/on-off-button.png';
+import salusLogo from '../../images/salus.png';
+import githubLogo from '../../images/github.png';
+import onoffbutton from '../../images/on-off-button.png';
 
-import '../App.css';
+import '../../App.css';
 import './Navbar.css';
-import './Landing.css';
+import '../Landing/Landing.css';
 
-import { TransactionContext} from '../context/TransactionContext';
+import { TransactionContext} from '../../context/TransactionContext';
 
 const connect = () => {
 
@@ -20,7 +20,7 @@ const Navbar = () => {
 	const {connectWallet, currentAccount, formData, setFormData, handleChange} = useContext(TransactionContext);
 
     return(
-        <div className="row header sticky-section">
+        <div className="row header">
             <ul className="main-nav">
 				<li className="logo-position"> <a href="#home"><img className="logo" src={salusLogo} /></a></li>
 				<li className="nav-element"><a href="#transactions">Transactions</a></li>

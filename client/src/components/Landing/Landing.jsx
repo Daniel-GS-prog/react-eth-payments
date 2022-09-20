@@ -1,9 +1,9 @@
 import React,{useContext}  from "react";
 
 import './Landing.css';
-import '../App.css';
+import '../../App.css';
 
-import { TransactionContext} from '../context/TransactionContext';
+import { TransactionContext} from '../../context/TransactionContext';
 
 
 const Landing = () => {

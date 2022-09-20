@@ -1,11 +1,11 @@
 import React from "react";
 
-import '../App.css';
+import '../../App.css';
 import './Footer.css';
 
-import githubLogo from '../images/github.png';
-import linkedIn from '../images/linkedIn.png';
-import twitter from '../images/twitter.png';
+import githubLogo from '../../images/github.png';
+import linkedIn from '../../images/linkedIn.png';
+import twitter from '../../images/twitter.png';
 
 const Footer = () => {
     return(
