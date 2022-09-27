@@ -4,15 +4,21 @@
 }
 
 .b--black {
-    border-color: #000;
+    border-color: rgb(232, 226, 226);
     
 }
 
-.background{
-    background: rgb(15,14,34);
-	background: linear-gradient(90deg, rgba(26,61,107,1) 0%, rgba(3,0,0,0.9962359943977591) 90%, rgba(15,14,34,1) 100%);
-	
+.background {
+    background-color: transparent;
+    box-shadow: 20px 18px 0px -9px rgba(54,56,130,0.88);
+    -webkit-box-shadow: 20px 18px 0px -9px rgba(54,56,130,0.88);
+    -moz-box-shadow: 20px 18px 0px -9px rgba(54,56,130,0.88);  
 }
+
+.border-color {
+    border-color: aliceblue;
+}
+
 .b--transparent {
     border-color: transparent;
 }

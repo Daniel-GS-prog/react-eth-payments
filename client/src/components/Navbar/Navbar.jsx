@@ -15,17 +15,67 @@ const connect = () => {
 }
 
 
-const Navbar = () => {
+const Navbar = ({onRouteChange, isSignedIn}) => {
 
 	const {connectWallet, currentAccount, formData, setFormData, handleChange} = useContext(TransactionContext);
 
-    return(
+	if(!isSignedIn){
+		return(
+			<div className="row header">
+				<ul className="main-nav">
+					<li 
+						className="logo-position"
+						onClick={()=> onRouteChange('landing')}
+						> 
+						<img className="logo" src={salusLogo} />
+						
+					</li>
+					<li 
+						className="nav-element"
+						onClick={()=> onRouteChange('register')}
+						>
+						Register
+					</li>
+					<li 
+						className="nav-element"
+						onClick={()=> onRouteChange('signin')}
+						>
+						Sign out
+					</li>
+
+				</ul>
+			</div>
+		);
+	} else {
+		
+		return(
         <div className="row header">
             <ul className="main-nav">
-				<li className="logo-position"> <a href="#home"><img className="logo" src={salusLogo} /></a></li>
-				<li className="nav-element"><a href="#transactions">Transactions</a></li>
-				<li className="nav-element"><a href="#users">Users</a></li>
-				<li className="nav-element"><a href="#about">About</a></li>
+
+				<li 
+					className="logo-position"
+					onClick={()=> onRouteChange('landing')}
+					> 
+					<img className="logo" src={salusLogo} />
+				</li>
+
+				<li 
+					className="nav-element"
+					onClick={()=> onRouteChange('transactions')}
+					>Transactions
+				</li>
+				<li 
+					className="nav-element"
+					onClick={()=> onRouteChange('user')}
+					>
+					Users
+				</li>
+				<li 
+					className="nav-element"
+					onClick={()=> onRouteChange('about')}
+					>About
+
+					</li>
 				<li className="nav-element"><a href="https://github.com/Daniel-GS-prog/react-eth-payments" target="_blank"><img className="github" src={githubLogo}/></a></li>
 				
 				{currentAccount?
@@ -35,17 +85,11 @@ const Navbar = () => {
 
 				}		
 
-				
-
-
-				
-
- 
-				
-
 			</ul>
         </div>
     );
+	}
+    
 }
 
 export default Navbar;

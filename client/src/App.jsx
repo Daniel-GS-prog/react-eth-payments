@@ -19,9 +19,22 @@ class App extends Component {
 		super() // calls the constructor of Component.
 		this.state = {
 			users: [],
-			searchfield: ''
+			searchfield: '',
+      route: 'signin',
+      isSignedIn: false
 		}
 	}
+
+  // update state v ariable rooute to display the web content.
+  // this function goes to the sognIn for onclick Sign In.
+  onRouteChange = (route) => {
+    this.setState({route: route});
+    if (route === 'signout'){
+      this.setState({isSignedIn:false});
+    } else if (route === 'landing'){
+      this.setState({isSignedIn:true})
+    }
+  }
 
   componentDidMount() {
 		
@@ -39,7 +52,7 @@ class App extends Component {
 
   render() {
 
-    const {users, searchfield, page} = this.state;
+    const {users, searchfield, route, isSignedIn} = this.state;
 
     const filteredUsers = users.filter(user => {
       return user.name.toLowerCase().includes(searchfield.toLowerCase());
@@ -48,8 +61,36 @@ class App extends Component {
       return (
     
         <div id='home' className='box'>
-        <Navbar />
-        <Signin />
+        <Navbar onRouteChange={this.onRouteChange} isSignedIn={isSignedIn}/>
+
+        {route === 'transactions'&& <Transactions onRouteChange={this.onRouteChange}/>}
+        
+        {route === 'signin' && <Signin onRouteChange={this.onRouteChange}/>}
+
+        {route === 'register' && <Registration onRouteChange={this.onRouteChange}/>}
+
+        {route === 'landing' && <Landing />}
+
+        {route === 'about' && <About />}
+
+        
+
+        <Footer/>
+
+        
+          
+            
+          
+          
+        
+        
+          
+            
+        
+        
+        
+        
+        
           
           {/* <Landing /> */}
 

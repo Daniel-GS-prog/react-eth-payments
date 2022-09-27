@@ -11,7 +11,7 @@ class Signin extends Component {
 
         return (
         // from tachyons
-        <article className=" general-width br3 ba background b--black-10 mv5  mw5 shadow-5 center">
+        <article className=" general-width br3 ba background1 border-color b--black-10 mv5  mw5 shadow-5 center">
             <div className="pa2 white">
                 <div className="measure ">
                     <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
